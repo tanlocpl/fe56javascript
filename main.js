@@ -1,4 +1,6 @@
-
+function themnguoidung(){
+  console.log('tanlocpl themnguoidung')
+}
 
 // In ra ngoài màn hình 
 console.log("Hello FE56")
