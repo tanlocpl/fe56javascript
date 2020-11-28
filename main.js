@@ -1,3 +1,8 @@
+console.log(" hello Cybersoft")
+
+function themnguoidung(){
+  console.log(" tanloc themnguoidung")
+}
 
 
 // In ra ngoài màn hình 
