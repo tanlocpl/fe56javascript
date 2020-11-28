@@ -1,6 +1,10 @@
+
+console.log(" hello Cybersoft")
+
 function themnguoidung(){
-  console.log('tanlocpl themnguoidung')
+  console.log(" tanloc themnguoidung")
 }
+
 
 // In ra ngoài màn hình 
 console.log("Hello FE56")
