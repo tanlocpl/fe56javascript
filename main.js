@@ -1,7 +1,7 @@
 console.log(" hello Cybersoft")
 
 function themnguoidung(){
-  var nguoi = document.getElementById();
+  console.log(" tanloc themnguoidung")
 }
 
 
