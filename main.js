@@ -1,3 +1,8 @@
+console.log(" hello Cybersoft")
+
+function themnguoidung(){
+  var nguoi = document.getElementById();
+}
 
 
 // In ra ngoài màn hình 
