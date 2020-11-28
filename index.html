@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>JavaScript FE56</title>
+</head>
+
+<body>
+
+  <input id="txtInput" value="cybersoft">
+
+  <p id="ten"> Dinh phuc nguyen </p>
+
+
+  <!-- <button onclick="evenclick()">click</button> -->
+  <button id="btnClick">click</button>
+
+  <div id="divthaydoi">noi dung truoc khi thay doi</div>
+  <button id="btnnhanemdi">Click me !!!</button>
+  <button id="btnhide">Hide</button>
+  <button id="btnshow">Show</button>
+  <button id="btnlammo">Blur</button>
+  <button id="btndisable">Disabled click me</button>
+  <br />
+  <img src="./img/pic_bulboff.gif" id="imgBuld">
+  <button class="btn btn-danger" id="btnOff">Off</button>
+  <button class="btn btn-success" id="btnOn">On</button>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>username</label>
+          <input id="txtUsername" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>password</label>
+          <input id="txtPassword" class="form-control">
+        </div>
+        <button id="btnlogin" class="btn btn-success">login</button>
+      </div>
+      <div class="col-md-6">
+        <div id="txtthongbao">
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <h3>Tính tiền típ</h3>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="">Tổng tiền thanh toán</label>
+          <input id="txtTongTien" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+          <div class="form-group">
+            <label for="">Bạn muốn típ bao nhiêu</label>
+            <select class="form-control" id="slPhanTramTip">
+              <option value="0">Chọn để tiếp</option>
+              <option value="30">30%</option>
+              <option value="20">20%</option>
+              <option value="15">15%</option>
+              <option value="10">10%</option>
+              <option value="5">5%</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="">Muốn share bao nhiêu người</label>
+          <input id="txtSoNguoi" type="text" class="form-control" />
+        </div>
+        <button id="btnTinhTienTip" class="btn btn-danger">Tính tiền</button>
+      </div>
+      <div id="txtThongBaoTienTip" style="display: none">Thông báo tiền típ</div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container-contact100">
+      <!-- <div
+        class="contact100-map"
+        id="google_map"
+        data-map-x="40.722047"
+        data-map-y="-73.986422"
+        data-pin="images/icons/map-marker.png"
+        data-scrollwhell="0"
+        data-draggable="1"
+      ></div>
+
+      <div class="contact100-more">
+        <i class="zmdi zmdi-phone-in-talk"></i>
+        (+84) 961.05.10.14
+      </div> -->
+
+      <div class="wrap-contact100">
+        <div>
+          <img
+            src="images/cybersoft.png"
+            alt="Front End CyberSoft"
+            width="30%"
+          />
+          <span style="padding: 20px"></span>
+          <img src="images/codepro.png" alt="Front End CyberSoft" width="30%" />
+
+          <div style="clear: both"></div>
+          <span class="contact100-form-title"> TÍNH CƯỚC UBER </span>
+          <h2>Vui lòng chọn loại xe:</h2>
+          <ul>
+            <li class="type">
+              <input id="uberX" type="radio" name="selector" onclick="layLoaiXe();"/>
+              <label for="uberX">Uber X</label>
+              <div class="check"></div>
+            </li>
+
+            <li class="type">
+              <input id="uberSUV" type="radio" name="selector" onclick="layLoaiXe();" />
+              <label for="uberSUV">Uber SUV</label>
+              <div class="check"></div>
+            </li>
+
+            <li class="type">
+              <input id="uberBlack" type="radio" name="selector" onclick="layLoaiXe();"/>
+              <label for="uberBlack">Uber Black</label>
+              <div class="check"></div>
+            </li>
+          </ul>
+        </div>
+        <div style="clear: both"></div>
+
+        <form class="contact100-form">
+          <div
+            class="wrap-input100 validate-input"
+            data-validate="Name is required"
+          >
+            <h2>Nhập vào số KM</h2>
+            <input
+              id="soKm"
+              placeholder="Số KM ..."
+            />
+            <span class="focus-input100"></span>
+          </div>
+          <div
+            class="wrap-input100 validate-input"
+            data-validate="Name is required"
+          >
+            <h2>Nhập thời gian chờ</h2>
+            <input
+              id="thoiGianCho"
+              placeholder="Thời gian chờ  ..."
+            />
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-contact100-form-btn">
+            <div class="contact100-form-bgbtn"></div>
+            <button id="tinhTien" type="button" class="contact100-form-btn">TÍNH TIỀN</button>
+          </div>
+          <div class="wrap-contact100-form-btn">
+            <div class="contact100-form-bgbtn"></div>
+            <button
+              type="button"
+              class="contact100-form-btn"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              IN HÓA ĐƠN
+            </button>
+          </div>
+        </form>
+
+        <div style="clear: both"></div>
+        <div id="divThanhTien" class="dongia">
+          <h2>
+            Thành tiền:
+            <span id="xuatTien" class="xuatTien"> 12345</span>
+            vnd
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <script>
+    console.log("Hello FE56");
+    // alert("Hello"); 
+  </script> -->
+  <script src="./main.js"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
